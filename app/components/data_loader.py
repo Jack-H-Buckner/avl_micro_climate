@@ -74,36 +74,86 @@ def fractional_week_to_date_label(fw):
 
 # ── Load pre-computed data ───────────────────────────────────────────────────
 
+class _SimpleTransform:
+    """Minimal affine transform with .a/.b/.c/.d/.e/.f attributes.
+
+    Serializable by st.cache_data (unlike rasterio.transform.Affine).
+    """
+    __slots__ = ("a", "b", "c", "d", "e", "f")
+
+    def __init__(self, a, b, c, d, e, f):
+        self.a = a
+        self.b = b
+        self.c = c
+        self.d = d
+        self.e = e
+        self.f = f
+
+    def __invert__(self):
+        """Return inverse transform for ~transform * (x, y) lookups."""
+        det = self.a * self.e - self.b * self.d
+        ia = self.e / det
+        ib = -self.b / det
+        ic = (self.b * self.f - self.e * self.c) / det
+        id_ = -self.d / det
+        ie = self.a / det
+        if_ = (self.d * self.c - self.a * self.f) / det
+        return _SimpleTransform(ia, ib, ic, id_, ie, if_)
+
+    def __mul__(self, other):
+        """transform * (x, y) → (col, row)."""
+        if isinstance(other, tuple) and len(other) == 2:
+            x, y = other
+            return (self.a * x + self.b * y + self.c,
+                    self.d * x + self.e * y + self.f)
+        return NotImplemented
+
+
+def _to_simple_transform(t):
+    """Convert a rasterio Affine to a _SimpleTransform."""
+    return _SimpleTransform(t.a, t.b, t.c, t.d, t.e, t.f)
+
+
+# Known grid origin (from elevation.tif in UTM 17N)
+_GRID_ORIGIN_X = 301472.366725655
+_GRID_ORIGIN_Y = 3990968.829495334
+_ORIG_RES = 100.0
+_ORIG_H = 1040
+_ORIG_W = 951
+
+
 def _get_frost_profile():
     """Get rasterio profile matching the prediction grid.
 
-    Uses the elevation covariate (always regenerated with the current bbox)
-    as the authoritative grid definition.  Falls back to frost probability
-    TIFs only if the elevation file is missing.  When no TIF is available
+    Uses the elevation covariate as the authoritative grid definition.
+    Falls back to frost probability TIFs.  When no TIF is available
     (e.g. Streamlit Cloud deploy), builds a synthetic profile from the
     known 100m UTM grid parameters.
+
+    All transforms are returned as _SimpleTransform (cache-safe).
     """
     elev_path = COVARIATES_DIR / "elevation.tif"
     if elev_path.exists():
         with rasterio.open(elev_path) as src:
-            return dict(src.profile)
+            p = dict(src.profile)
+            p["transform"] = _to_simple_transform(p["transform"])
+            return p
     for wn in range(1, 40):
         path = FROST_CLIM_DIR / f"frost_prob_week_{wn:02d}.tif"
         if path.exists():
             with rasterio.open(path) as src:
-                return dict(src.profile)
-    # Synthetic profile for the 100m UTM 17N grid (origin from elevation.tif)
-    # Uses an Affine-compatible object without requiring rasterio.transform
-    return _make_synthetic_profile(100.0, 1040, 951)
+                p = dict(src.profile)
+                p["transform"] = _to_simple_transform(p["transform"])
+                return p
+    return _make_profile(_ORIG_RES, _ORIG_H, _ORIG_W)
 
 
-def _make_synthetic_profile(resolution, height, width):
-    """Build a UTM 17N profile with the known grid origin."""
-    from rasterio.transform import Affine
+def _make_profile(resolution, height, width):
+    """Build a UTM 17N profile dict with a _SimpleTransform."""
     return {
         "crs": "EPSG:32617",
-        "transform": Affine(resolution, 0.0, 301472.366725655,
-                             0.0, -resolution, 3990968.829495334),
+        "transform": _SimpleTransform(resolution, 0.0, _GRID_ORIGIN_X,
+                                       0.0, -resolution, _GRID_ORIGIN_Y),
         "height": height,
         "width": width,
     }
@@ -118,15 +168,15 @@ def _adjust_profile_to_grid(profile, grid_h, grid_w):
     orig_w = profile["width"]
     if orig_h == grid_h and orig_w == grid_w:
         return profile
-    from rasterio.transform import Affine
     scale_x = (orig_w * t.a) / grid_w
     scale_y = (orig_h * t.e) / grid_h
-    new_transform = Affine(scale_x, t.b, t.c, t.d, scale_y, t.f)
-    profile = dict(profile)
-    profile["transform"] = new_transform
-    profile["height"] = grid_h
-    profile["width"] = grid_w
-    return profile
+    new_transform = _SimpleTransform(scale_x, t.b, t.c, t.d, scale_y, t.f)
+    return {
+        **profile,
+        "transform": new_transform,
+        "height": grid_h,
+        "width": grid_w,
+    }
 
 
 def load_last_frost_data():
@@ -162,8 +212,8 @@ def load_last_frost_data():
         if profile is not None:
             profile = _adjust_profile_to_grid(profile, grid_h, grid_w)
         else:
-            res = (1040 * 100.0) / grid_h  # derive resolution from grid ratio
-            profile = _make_synthetic_profile(res, grid_h, grid_w)
+            res = (_ORIG_H * _ORIG_RES) / grid_h
+            profile = _make_profile(res, grid_h, grid_w)
         return {
             "last_frost_grids": grids,
             "thresholds": d["thresholds"],
