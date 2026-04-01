@@ -1,0 +1,308 @@
+Sun Mar 29 08:15:49 EDT 2026  [1/5] Running NDVI compositing...
+2026-03-29 08:15:51,302  INFO  Found 497 NDVI scenes spanning 2018-09-04 to 2026-03-21
+2026-03-29 08:15:51,349  INFO  Creating 197 biweekly composites from 2018-09-04 to 2026-03-10
+2026-03-29 08:15:51,462  INFO    Composite 2018-09-04: 2 scenes
+2026-03-29 08:15:52,251  INFO    Composite 2018-09-18: 3 scenes
+2026-03-29 08:15:53,214  INFO    Composite 2018-10-02: 1 scenes
+2026-03-29 08:15:53,601  INFO    Composite 2019-01-08: 2 scenes
+2026-03-29 08:15:54,479  INFO    Composite 2019-01-22: 4 scenes
+2026-03-29 08:15:55,666  INFO    Composite 2019-02-05: 3 scenes
+2026-03-29 08:15:56,329  INFO    Composite 2019-03-05: 2 scenes
+2026-03-29 08:15:57,041  INFO    Composite 2019-03-19: 1 scenes
+2026-03-29 08:15:57,437  INFO    Composite 2019-04-02: 1 scenes
+2026-03-29 08:15:57,610  INFO    Composite 2019-04-16: 1 scenes
+2026-03-29 08:15:57,796  INFO    Composite 2019-04-30: 1 scenes
+2026-03-29 08:15:58,256  INFO    Composite 2019-05-14: 1 scenes
+2026-03-29 08:15:58,667  INFO    Composite 2019-05-28: 3 scenes
+2026-03-29 08:15:59,660  INFO    Composite 2019-09-03: 3 scenes
+2026-03-29 08:16:00,908  INFO    Composite 2019-09-17: 3 scenes
+2026-03-29 08:16:01,409  INFO    Composite 2019-10-01: 3 scenes
+2026-03-29 08:16:02,587  INFO    Composite 2019-10-15: 2 scenes
+2026-03-29 08:16:03,052  INFO    Composite 2019-10-29: 3 scenes
+2026-03-29 08:16:04,278  INFO    Composite 2019-11-12: 4 scenes
+2026-03-29 08:16:05,854  INFO    Composite 2019-11-26: 2 scenes
+2026-03-29 08:16:06,737  INFO    Composite 2019-12-10: 2 scenes
+2026-03-29 08:16:07,356  INFO    Composite 2019-12-24: 2 scenes
+2026-03-29 08:16:07,952  INFO    Composite 2020-01-07: 3 scenes
+2026-03-29 08:16:09,130  INFO    Composite 2020-01-21: 1 scenes
+2026-03-29 08:16:09,482  INFO    Composite 2020-02-04: 2 scenes
+2026-03-29 08:16:10,054  INFO    Composite 2020-02-18: 1 scenes
+2026-03-29 08:16:10,251  INFO    Composite 2020-03-03: 3 scenes
+2026-03-29 08:16:11,191  INFO    Composite 2020-03-17: 2 scenes
+2026-03-29 08:16:11,531  INFO    Composite 2020-03-31: 4 scenes
+2026-03-29 08:16:12,861  INFO    Composite 2020-04-14: 1 scenes
+2026-03-29 08:16:13,239  INFO    Composite 2020-04-28: 4 scenes
+2026-03-29 08:16:14,553  INFO    Composite 2020-05-12: 4 scenes
+2026-03-29 08:16:16,147  INFO    Composite 2020-05-26: 2 scenes
+2026-03-29 08:16:16,692  INFO    Composite 2020-09-01: 2 scenes
+2026-03-29 08:16:17,409  INFO    Composite 2020-09-15: 4 scenes
+2026-03-29 08:16:18,550  INFO    Composite 2020-09-29: 3 scenes
+2026-03-29 08:16:19,647  INFO    Composite 2020-10-13: 4 scenes
+2026-03-29 08:16:21,330  INFO    Composite 2020-10-27: 3 scenes
+2026-03-29 08:16:22,540  INFO    Composite 2020-11-10: 2 scenes
+2026-03-29 08:16:23,111  INFO    Composite 2020-11-24: 4 scenes
+2026-03-29 08:16:24,635  INFO    Composite 2020-12-08: 4 scenes
+2026-03-29 08:16:25,813  INFO    Composite 2020-12-22: 4 scenes
+2026-03-29 08:16:27,085  INFO    Composite 2021-01-05: 3 scenes
+2026-03-29 08:16:28,079  INFO    Composite 2021-01-19: 2 scenes
+2026-03-29 08:16:28,439  INFO    Composite 2021-02-02: 4 scenes
+2026-03-29 08:16:29,850  INFO    Composite 2021-02-16: 2 scenes
+2026-03-29 08:16:30,854  INFO    Composite 2021-03-02: 2 scenes
+2026-03-29 08:16:31,713  INFO    Composite 2021-03-16: 4 scenes
+2026-03-29 08:16:32,736  INFO    Composite 2021-03-30: 1 scenes
+2026-03-29 08:16:33,124  INFO    Composite 2021-04-13: 4 scenes
+2026-03-29 08:16:34,850  INFO    Composite 2021-04-27: 4 scenes
+2026-03-29 08:16:36,380  INFO    Composite 2021-05-11: 3 scenes
+2026-03-29 08:16:37,365  INFO    Composite 2021-05-25: 4 scenes
+2026-03-29 08:16:38,848  INFO    Composite 2021-08-31: 1 scenes
+2026-03-29 08:16:39,263  INFO    Composite 2021-09-14: 3 scenes
+2026-03-29 08:16:40,514  INFO    Composite 2021-09-28: 4 scenes
+2026-03-29 08:16:41,997  INFO    Composite 2021-10-12: 3 scenes
+2026-03-29 08:16:43,193  INFO    Composite 2021-10-26: 3 scenes
+2026-03-29 08:16:44,208  INFO    Composite 2021-11-09: 5 scenes
+2026-03-29 08:16:46,068  INFO    Composite 2021-11-23: 6 scenes
+2026-03-29 08:16:48,397  INFO    Composite 2021-12-07: 5 scenes
+2026-03-29 08:16:50,210  INFO    Composite 2021-12-21: 4 scenes
+2026-03-29 08:16:51,595  INFO    Composite 2022-01-04: 3 scenes
+2026-03-29 08:16:52,485  INFO    Composite 2022-01-18: 3 scenes
+2026-03-29 08:16:53,216  INFO    Composite 2022-02-01: 5 scenes
+2026-03-29 08:16:55,210  INFO    Composite 2022-02-15: 3 scenes
+2026-03-29 08:16:56,515  INFO    Composite 2022-03-01: 4 scenes
+2026-03-29 08:16:57,921  INFO    Composite 2022-03-15: 4 scenes
+2026-03-29 08:16:59,014  INFO    Composite 2022-03-29: 5 scenes
+2026-03-29 08:17:01,024  INFO    Composite 2022-04-12: 4 scenes
+2026-03-29 08:17:02,080  INFO    Composite 2022-04-26: 3 scenes
+2026-03-29 08:17:03,066  INFO    Composite 2022-05-10: 4 scenes
+2026-03-29 08:17:04,518  INFO    Composite 2022-05-24: 2 scenes
+2026-03-29 08:17:05,286  INFO    Composite 2022-06-07: 1 scenes
+2026-03-29 08:17:05,697  INFO    Composite 2022-08-30: 2 scenes
+2026-03-29 08:17:06,211  INFO    Composite 2022-09-13: 4 scenes
+2026-03-29 08:17:07,743  INFO    Composite 2022-09-27: 4 scenes
+2026-03-29 08:17:09,331  INFO    Composite 2022-10-11: 4 scenes
+2026-03-29 08:17:10,809  INFO    Composite 2022-10-25: 5 scenes
+2026-03-29 08:17:12,551  INFO    Composite 2022-11-08: 3 scenes
+2026-03-29 08:17:13,492  INFO    Composite 2022-11-22: 4 scenes
+2026-03-29 08:17:15,102  INFO    Composite 2022-12-06: 4 scenes
+2026-03-29 08:17:16,186  INFO    Composite 2022-12-20: 3 scenes
+2026-03-29 08:17:17,093  INFO    Composite 2023-01-03: 4 scenes
+2026-03-29 08:17:18,393  INFO    Composite 2023-01-17: 4 scenes
+2026-03-29 08:17:19,899  INFO    Composite 2023-01-31: 3 scenes
+2026-03-29 08:17:20,903  INFO    Composite 2023-02-14: 4 scenes
+2026-03-29 08:17:21,940  INFO    Composite 2023-02-28: 1 scenes
+2026-03-29 08:17:22,321  INFO    Composite 2023-03-14: 2 scenes
+2026-03-29 08:17:23,109  INFO    Composite 2023-03-28: 4 scenes
+2026-03-29 08:17:24,609  INFO    Composite 2023-04-11: 3 scenes
+2026-03-29 08:17:25,348  INFO    Composite 2023-04-25: 2 scenes
+2026-03-29 08:17:26,064  INFO    Composite 2023-05-09: 3 scenes
+2026-03-29 08:17:26,989  INFO    Composite 2023-05-23: 5 scenes
+2026-03-29 08:17:28,900  INFO    Composite 2023-06-06: 1 scenes
+2026-03-29 08:17:29,111  INFO    Composite 2023-08-29: 1 scenes
+2026-03-29 08:17:29,547  INFO    Composite 2023-09-12: 5 scenes
+2026-03-29 08:17:31,493  INFO    Composite 2023-09-26: 2 scenes
+2026-03-29 08:17:32,267  INFO    Composite 2023-10-10: 5 scenes
+2026-03-29 08:17:34,058  INFO    Composite 2023-10-24: 4 scenes
+2026-03-29 08:17:35,649  INFO    Composite 2023-11-07: 4 scenes
+2026-03-29 08:17:37,285  INFO    Composite 2023-11-21: 5 scenes
+2026-03-29 08:17:38,933  INFO    Composite 2023-12-05: 1 scenes
+2026-03-29 08:17:39,354  INFO    Composite 2023-12-19: 3 scenes
+2026-03-29 08:17:40,602  INFO    Composite 2024-01-02: 3 scenes
+2026-03-29 08:17:41,133  INFO    Composite 2024-01-16: 5 scenes
+2026-03-29 08:17:42,736  INFO    Composite 2024-01-30: 4 scenes
+2026-03-29 08:17:43,871  INFO    Composite 2024-02-13: 2 scenes
+2026-03-29 08:17:44,497  INFO    Composite 2024-02-27: 3 scenes
+2026-03-29 08:17:45,725  INFO    Composite 2024-03-12: 3 scenes
+2026-03-29 08:17:46,893  INFO    Composite 2024-03-26: 4 scenes
+2026-03-29 08:17:48,296  INFO    Composite 2024-04-09: 3 scenes
+2026-03-29 08:17:49,433  INFO    Composite 2024-04-23: 3 scenes
+2026-03-29 08:17:50,437  INFO    Composite 2024-05-07: 4 scenes
+2026-03-29 08:17:51,994  INFO    Composite 2024-05-21: 4 scenes
+2026-03-29 08:17:53,069  INFO    Composite 2024-06-04: 1 scenes
+2026-03-29 08:17:53,479  INFO    Composite 2024-08-27: 1 scenes
+2026-03-29 08:17:53,848  INFO    Composite 2024-09-10: 3 scenes
+2026-03-29 08:17:54,409  INFO    Composite 2024-09-24: 3 scenes
+2026-03-29 08:17:55,380  INFO    Composite 2024-10-08: 5 scenes
+2026-03-29 08:17:57,191  INFO    Composite 2024-10-22: 5 scenes
+2026-03-29 08:17:59,072  INFO    Composite 2024-11-05: 3 scenes
+2026-03-29 08:17:59,956  INFO    Composite 2024-11-19: 3 scenes
+2026-03-29 08:18:00,885  INFO    Composite 2024-12-03: 5 scenes
+2026-03-29 08:18:02,125  INFO    Composite 2024-12-17: 4 scenes
+2026-03-29 08:18:03,448  INFO    Composite 2024-12-31: 4 scenes
+2026-03-29 08:18:04,377  INFO    Composite 2025-01-14: 3 scenes
+2026-03-29 08:18:05,580  INFO    Composite 2025-01-28: 4 scenes
+2026-03-29 08:18:06,820  INFO    Composite 2025-02-11: 5 scenes
+2026-03-29 08:18:08,606  INFO    Composite 2025-02-25: 4 scenes
+2026-03-29 08:18:10,220  INFO    Composite 2025-03-11: 4 scenes
+2026-03-29 08:18:11,512  INFO    Composite 2025-03-25: 5 scenes
+2026-03-29 08:18:13,554  INFO    Composite 2025-04-08: 4 scenes
+2026-03-29 08:18:14,660  INFO    Composite 2025-04-22: 5 scenes
+2026-03-29 08:18:16,271  INFO    Composite 2025-05-06: 4 scenes
+2026-03-29 08:18:17,370  INFO    Composite 2025-05-20: 6 scenes
+2026-03-29 08:18:19,256  INFO    Composite 2025-06-03: 1 scenes
+2026-03-29 08:18:19,427  INFO    Composite 2025-09-09: 5 scenes
+2026-03-29 08:18:21,397  INFO    Composite 2025-09-23: 6 scenes
+2026-03-29 08:18:23,633  INFO    Composite 2025-10-07: 6 scenes
+2026-03-29 08:18:25,756  INFO    Composite 2025-10-21: 3 scenes
+2026-03-29 08:18:26,991  INFO    Composite 2025-11-04: 5 scenes
+2026-03-29 08:18:28,526  INFO    Composite 2025-11-18: 5 scenes
+2026-03-29 08:18:30,295  INFO    Composite 2025-12-02: 4 scenes
+2026-03-29 08:18:31,883  INFO    Composite 2025-12-16: 4 scenes
+2026-03-29 08:18:33,280  INFO    Composite 2025-12-30: 6 scenes
+2026-03-29 08:18:35,109  INFO    Composite 2026-01-13: 3 scenes
+2026-03-29 08:18:36,049  INFO    Composite 2026-01-27: 3 scenes
+2026-03-29 08:18:37,062  INFO    Composite 2026-02-10: 4 scenes
+2026-03-29 08:18:38,461  INFO    Composite 2026-02-24: 4 scenes
+2026-03-29 08:18:39,747  INFO    Composite 2026-03-10: 4 scenes
+2026-03-29 08:18:41,245  INFO  Interpolating temporal gaps …
+2026-03-29 08:18:47,668  INFO  Writing composites to /Users/johnbuckner/github/micro_climates/data/processed/ndvi/hls_ndvi_composites.zarr …
+/Users/johnbuckner/miniconda3/lib/python3.13/site-packages/zarr/api/asynchronous.py:247: ZarrUserWarning: Consolidated metadata is currently not part in the Zarr format 3 specification. It may not be supported by other zarr implementations and may change in the future.
+  warnings.warn(
+2026-03-29 08:18:49,385  INFO  Wrote /Users/johnbuckner/github/micro_climates/data/processed/ndvi/hls_ndvi_composites.zarr
+2026-03-29 08:18:49,820  INFO  Wrote NDVI lookup table (197 composites) → /Users/johnbuckner/github/micro_climates/data/processed/ndvi/ndvi_lookup.parquet
+Sun Mar 29 08:18:50 EDT 2026  NDVI compositing done.
+
+Sun Mar 29 08:18:50 EDT 2026  [2/5] Re-running ECOSTRESS climatology filter...
+2026-03-29 08:18:52,983  INFO  Loaded monthly Tmin climatology from /Users/johnbuckner/github/micro_climates/data/processed/gridded_tmin/gridmet_tmin_climatology.zarr
+2026-03-29 08:23:02,984  INFO  ── Filter summary (k=1.25, z=3.0) ──
+2026-03-29 08:23:02,984  INFO    Scenes filtered: 1663
+2026-03-29 08:23:02,984  INFO    Scenes skipped:  33
+2026-03-29 08:23:02,984  INFO    Total pixels removed: 12177404
+2026-03-29 08:23:02,984  INFO      Climatology: 886437
+2026-03-29 08:23:02,984  INFO      Tukey:       11277024
+2026-03-29 08:23:02,984  INFO      Hard floor:  13943
+2026-03-29 08:23:02,984  INFO    Median pixels removed per scene: 1948
+2026-03-29 08:23:02,985  INFO    Diagnostics → /Users/johnbuckner/github/micro_climates/data/processed/satellite/ecostress_filtered/tukey_filter_diagnostics.parquet
+2026-03-29 08:23:02,985  INFO    Filtered scenes → /Users/johnbuckner/github/micro_climates/data/processed/satellite/ecostress_filtered
+Sun Mar 29 08:23:03 EDT 2026  ECOSTRESS filtering done.
+
+Sun Mar 29 08:23:03 EDT 2026  [3/5] Re-aligning ECOSTRESS scenes to 100 m grid...
+2026-03-29 08:23:05,247  INFO  Reading reference grid from /Users/johnbuckner/github/micro_climates/data/processed/dem_100m.tif
+2026-03-29 08:23:05,290  INFO  Reference grid: 620 × 600, res=100.0 m, CRS=EPSG:32617
+2026-03-29 08:23:05,290  INFO  ── Aligning ECOSTRESS composites (70 m → 100 m) ──
+2026-03-29 08:23:05,397  INFO    Composite ecostress_nighttime_median.tif → ecostress_nighttime_median_100m.tif
+2026-03-29 08:23:05,497  INFO    Composite ecostress_nighttime_q15.tif → ecostress_nighttime_q15_100m.tif
+2026-03-29 08:23:05,596  INFO    Composite ecostress_nighttime_q85.tif → ecostress_nighttime_q85_100m.tif
+2026-03-29 08:23:05,696  INFO    Composite ecostress_nighttime_iqr.tif → ecostress_nighttime_iqr_100m.tif
+2026-03-29 08:23:05,791  INFO    Composite ecostress_nighttime_count.tif → ecostress_nighttime_count_100m.tif
+2026-03-29 08:23:05,957  INFO    Composite ecostress_nighttime_min.tif → ecostress_nighttime_min_100m.tif
+2026-03-29 08:23:06,056  INFO    Composite ecostress_nighttime_std.tif → ecostress_nighttime_std_100m.tif
+2026-03-29 08:23:06,152  INFO    Composite ecostress_predawn_composite.tif → ecostress_predawn_composite_100m.tif
+2026-03-29 08:23:06,152  INFO  ── Aligning ECOSTRESS filtered scenes (70 m → 100 m) ──
+2026-03-29 08:23:06,159  INFO  Aligning 752 filtered scenes to 100 m grid ...
+2026-03-29 08:23:14,086  INFO    ... 100 / 752 scenes aligned
+2026-03-29 08:23:21,553  INFO    ... 200 / 752 scenes aligned
+2026-03-29 08:23:29,365  INFO    ... 300 / 752 scenes aligned
+2026-03-29 08:23:37,812  INFO    ... 400 / 752 scenes aligned
+2026-03-29 08:23:46,235  INFO    ... 500 / 752 scenes aligned
+2026-03-29 08:23:53,260  INFO    ... 600 / 752 scenes aligned
+2026-03-29 08:24:01,331  INFO    ... 700 / 752 scenes aligned
+2026-03-29 08:24:04,835  INFO  Aligned 752 scenes → /Users/johnbuckner/github/micro_climates/data/processed/satellite/ecostress_aligned
+2026-03-29 08:24:04,836  INFO  ── Aligning gridMET (WGS 84 ~4 km → 100 m UTM) ──
+2026-03-29 08:24:04,836  INFO  gridMET 100 m Zarr already exists at /Users/johnbuckner/github/micro_climates/data/processed/gridded/gridmet_aligned/gridmet_100m.zarr — skipping.
+2026-03-29 08:24:04,836  INFO  ── Alignment complete ──
+Sun Mar 29 08:24:04 EDT 2026  Grid alignment done.
+
+Sun Mar 29 08:24:04 EDT 2026  [4/5] Building training dataset...
+2026-03-29 08:24:11,391  INFO  Loading covariates (terrain + land surface) ...
+2026-03-29 08:24:11,627  INFO    Grid: 620 × 600, covariates: ['elevation', 'slope', 'aspect_sin', 'aspect_cos', 'tpi_300m', 'tpi_1000m', 'curvature', 'twi', 'impervious_pct', 'tree_canopy_pct', 'sky_view_factor', 'dist_to_water_m', 'is_forest', 'is_developed', 'is_agriculture', 'is_water', 'ecostress_nighttime_median', 'ecostress_nighttime_q15', 'ecostress_nighttime_q85', 'ecostress_nighttime_iqr']
+2026-03-29 08:24:11,627  INFO  Loading gridMET 100 m Zarr ...
+2026-03-29 08:24:11,932  INFO  Loading NDVI composites ...
+2026-03-29 08:24:11,944  INFO  Loaded NDVI composites: 197 timesteps, grid 620 × 600
+2026-03-29 08:24:11,944  INFO  Loading scene inventory ...
+2026-03-29 08:24:12,052  INFO  Qualifying nighttime scenes: 453 (of 662 total nighttime)
+2026-03-29 08:24:12,055  INFO  Pixels with all covariates valid: 401 / 372000
+2026-03-29 08:25:31,086  INFO    ... 50 / 453 scenes processed (11528 samples so far)
+2026-03-29 08:26:50,807  INFO    ... 100 / 453 scenes processed (23012 samples so far)
+2026-03-29 08:28:08,885  INFO    ... 150 / 453 scenes processed (34181 samples so far)
+2026-03-29 08:29:29,686  INFO    ... 200 / 453 scenes processed (41878 samples so far)
+2026-03-29 08:30:49,173  INFO    ... 250 / 453 scenes processed (52152 samples so far)
+2026-03-29 08:32:09,084  INFO    ... 300 / 453 scenes processed (64438 samples so far)
+2026-03-29 08:33:30,723  INFO    ... 350 / 453 scenes processed (76579 samples so far)
+2026-03-29 08:34:59,904  INFO    ... 400 / 453 scenes processed (84303 samples so far)
+2026-03-29 08:36:31,902  INFO    ... 450 / 453 scenes processed (91973 samples so far)
+2026-03-29 08:36:37,290  INFO  Total training samples: 92508 from 448 scenes
+2026-03-29 08:36:37,415  INFO  Saved → /Users/johnbuckner/github/micro_climates/data/processed/training/ecostress_training_samples.parquet (2.2 MB)
+2026-03-29 08:36:37,415  INFO  ── Training data summary ──
+2026-03-29 08:36:37,415  INFO    Samples:  92508
+2026-03-29 08:36:37,423  INFO    Scenes:   448
+2026-03-29 08:36:37,433  INFO    Dates:    2019-01-26 to 2025-05-22
+2026-03-29 08:36:37,434  INFO    LST:      -21.3 to 26.5 °C (mean 6.6)
+2026-03-29 08:36:37,435  INFO    Hours until sunrise: 1.1 to 11.6 (mean 6.2)
+2026-03-29 08:36:37,435  INFO    ── Covariate ranges ──
+2026-03-29 08:36:37,435  INFO      elevation               min=463.91  max=1207.45  mean=625.92
+2026-03-29 08:36:37,436  INFO      slope                   min=0.02  max=20.58  mean=4.08
+2026-03-29 08:36:37,437  INFO      aspect_sin              min=-1.00  max=1.00  mean=0.05
+2026-03-29 08:36:37,437  INFO      aspect_cos              min=-1.00  max=1.00  mean=-0.20
+2026-03-29 08:36:37,438  INFO      tpi_300m                min=-53.62  max=15.44  mean=-13.22
+2026-03-29 08:36:37,438  INFO      tpi_1000m               min=-105.84  max=23.58  mean=-35.21
+2026-03-29 08:36:37,439  INFO      curvature               min=-0.01  max=0.00  mean=-0.00
+2026-03-29 08:36:37,440  INFO      twi                     min=7.55  max=16.33  mean=11.01
+2026-03-29 08:36:37,440  INFO      impervious_pct          min=1.00  max=92.98  mean=16.56
+2026-03-29 08:36:37,441  INFO      tree_canopy_pct         min=13.00  max=86.17  mean=46.50
+2026-03-29 08:36:37,441  INFO      sky_view_factor         min=0.87  max=1.00  mean=0.97
+2026-03-29 08:36:37,442  INFO      dist_to_water_m         min=30.00  max=95.84  mean=54.41
+2026-03-29 08:36:37,443  INFO      is_forest               min=1.00  max=1.00  mean=1.00
+2026-03-29 08:36:37,443  INFO      is_developed            min=1.00  max=1.00  mean=1.00
+2026-03-29 08:36:37,444  INFO      is_agriculture          min=1.00  max=1.00  mean=1.00
+2026-03-29 08:36:37,444  INFO      is_water                min=1.00  max=1.00  mean=1.00
+2026-03-29 08:36:37,445  INFO      ecostress_nighttime_median  min=4.07  max=8.77  mean=6.47
+2026-03-29 08:36:37,446  INFO      ecostress_nighttime_q15  min=-3.74  max=0.87  mean=-1.11
+2026-03-29 08:36:37,446  INFO      ecostress_nighttime_q85  min=12.84  max=18.14  mean=15.56
+2026-03-29 08:36:37,447  INFO      ecostress_nighttime_iqr  min=9.20  max=13.70  mean=11.38
+2026-03-29 08:36:37,447  INFO      tmmn                    min=-18.25  max=19.65  mean=4.20
+2026-03-29 08:36:37,448  INFO      tmmx                    min=-10.25  max=33.05  mean=18.14
+2026-03-29 08:36:37,449  INFO      tmmx_prev               min=-2.45  max=32.65  mean=17.88
+2026-03-29 08:36:37,449  INFO      diurnal_range           min=1.40  max=23.70  mean=13.94
+2026-03-29 08:36:37,450  INFO      vs                      min=1.10  max=11.20  mean=4.14
+2026-03-29 08:36:37,450  INFO      sph                     min=0.00  max=0.02  mean=0.01
+2026-03-29 08:36:37,451  INFO      vpd                     min=0.00  max=1.58  mean=0.66
+2026-03-29 08:36:37,452  INFO      srad                    min=41.90  max=336.90  mean=184.87
+2026-03-29 08:36:37,452  INFO      srad_prev               min=33.20  max=333.80  mean=171.31
+2026-03-29 08:36:37,453  INFO      pr                      min=0.00  max=103.80  mean=1.88
+2026-03-29 08:36:37,453  INFO      rmin                    min=9.70  max=89.20  mean=38.22
+2026-03-29 08:36:37,454  INFO      ndvi                    min=-5634.34  max=9632.77  mean=4815.08
+Sun Mar 29 08:36:37 EDT 2026  Training data built.
+
+Sun Mar 29 08:36:37 EDT 2026  [5/5] Running random forest model...
+2026-03-29 08:36:42,476  INFO  ══ Step 1: Grouped train/test split ══
+2026-03-29 08:36:42,477  INFO  Loading training data from /Users/johnbuckner/github/micro_climates/data/processed/training/ecostress_training_samples.parquet ...
+2026-03-29 08:36:42,612  INFO    92508 samples, 448 scenes
+2026-03-29 08:36:42,685  INFO    Train: 65417 samples, 313 scenes
+2026-03-29 08:36:42,687  INFO    Test:  27091 samples, 135 scenes
+2026-03-29 08:36:42,806  INFO    Cached splits → /Users/johnbuckner/github/micro_climates/data/processed/training/splits (1.6 MB train, 0.9 MB test)
+2026-03-29 08:36:42,807  INFO  RF params: {'n_estimators': 200, 'max_depth': 25, 'min_samples_leaf': 20, 'max_features': 0.5, 'n_jobs': -1, 'random_state': 42}
+2026-03-29 08:36:42,807  INFO  ══ Step 2: 5-fold grouped CV ══
+2026-03-29 08:36:42,853  INFO    Fold 1: train=52333 samples (250 scenes), val=13084 samples (63 scenes)
+2026-03-29 08:36:42,866  INFO    Fold 2: train=52333 samples (250 scenes), val=13084 samples (63 scenes)
+2026-03-29 08:36:42,879  INFO    Fold 3: train=52334 samples (251 scenes), val=13083 samples (62 scenes)
+2026-03-29 08:36:42,892  INFO    Fold 4: train=52334 samples (251 scenes), val=13083 samples (62 scenes)
+2026-03-29 08:36:42,906  INFO    Fold 5: train=52334 samples (250 scenes), val=13083 samples (63 scenes)
+2026-03-29 08:36:55,592  INFO    Fold 1 — R²=0.8734  RMSE=2.588 °C  MAE=1.527 °C  Bias=0.029 °C
+2026-03-29 08:36:55,592  INFO      (12.7 s)
+2026-03-29 08:37:07,545  INFO    Fold 2 — R²=0.8237  RMSE=3.019 °C  MAE=1.708 °C  Bias=-0.420 °C
+2026-03-29 08:37:07,545  INFO      (12.0 s)
+2026-03-29 08:37:18,635  INFO    Fold 3 — R²=0.8661  RMSE=2.787 °C  MAE=1.600 °C  Bias=0.076 °C
+2026-03-29 08:37:18,635  INFO      (11.1 s)
+2026-03-29 08:37:30,034  INFO    Fold 4 — R²=0.8983  RMSE=2.468 °C  MAE=1.540 °C  Bias=-0.636 °C
+2026-03-29 08:37:30,034  INFO      (11.4 s)
+2026-03-29 08:37:41,615  INFO    Fold 5 — R²=0.8913  RMSE=2.407 °C  MAE=1.256 °C  Bias=0.198 °C
+2026-03-29 08:37:41,616  INFO      (11.6 s)
+2026-03-29 08:37:41,616  INFO    CV mean — R²=0.8706±0.0262  RMSE=2.654±0.224  MAE=1.526±0.149
+2026-03-29 08:37:41,622  INFO  ══ Step 3: Final model on full training split ══
+2026-03-29 08:37:41,632  INFO  Training final RF on 65417 samples ...
+2026-03-29 08:37:56,332  INFO    Training done (14.7 s)
+2026-03-29 08:37:56,417  INFO    Test set — R²=0.8686  RMSE=2.738 °C  MAE=1.541 °C  Bias=0.234 °C
+2026-03-29 08:37:56,515  INFO  Saved model → /Users/johnbuckner/github/micro_climates/data/output/models/rf_benchmark.pkl
+2026-03-29 08:37:56,516  INFO  ══ Step 4: Diagnostic plots ══
+2026-03-29 08:37:58,431  INFO  Saved diagnostics → /Users/johnbuckner/github/micro_climates/figures/rf_benchmark_diagnostics.png
+2026-03-29 08:37:58,432  INFO  ══ Summary ══
+2026-03-29 08:37:58,432  INFO    CV R²:   0.8706 ± 0.0262
+2026-03-29 08:37:58,432  INFO    CV RMSE: 2.654 ± 0.224 °C
+2026-03-29 08:37:58,432  INFO    Test R²:   0.8686
+2026-03-29 08:37:58,432  INFO    Test RMSE: 2.738 °C
+2026-03-29 08:37:58,432  INFO    Test MAE:  1.541 °C
+2026-03-29 08:37:58,432  INFO    Test Bias: 0.234 °C
+Sun Mar 29 08:37:58 EDT 2026  Modeling complete.
+
+========================================
+Sun Mar 29 08:37:58 EDT 2026  Full pipeline finished successfully.
+========================================

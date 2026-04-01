@@ -1,0 +1,27 @@
+# ── Data: ignore everything except the lightweight app data ──
+data/*
+!data/output
+data/output/*
+!data/output/frost_climatology
+data/output/frost_climatology/*
+!data/output/frost_climatology/last_frost_dates_400m.npz
+
+# ── Secrets ──
+.env
+netrc
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# ── Figures (regenerable, ~74 MB) ──
+figures/
+eda/
+
+# ── Local tooling ──
+.claude/
+
+# ── OS ──
+.DS_Store

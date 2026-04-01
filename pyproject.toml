@@ -1,0 +1,39 @@
+[project]
+name = "asheville-frost"
+version = "0.1.0"
+description = "High-resolution frost date prediction for the Asheville, NC metro area"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "pandas",
+    "geopandas",
+    "xarray",
+    "rioxarray",
+    "rasterio",
+    "pyproj",
+    "richdem",
+    "pykrige",
+    "scikit-learn",
+    "statsmodels",
+    "scipy",
+    "matplotlib",
+    "cartopy",
+    "folium",
+    "requests",
+    "zarr",
+    "dask",
+    "shapely",
+    "earthaccess",
+    "xclim",
+    "climpred",
+    "xskillscore",
+    "cdsapi",
+    "streamlit",
+    "streamlit-folium",
+    "geopy",
+    "Pillow",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends._legacy:_Backend"
