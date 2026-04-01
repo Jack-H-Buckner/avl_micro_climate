@@ -180,10 +180,10 @@ def build_frost_map(
             labelsPane.style.zIndex = 660;
             labelsPane.style.pointerEvents = 'none';
 
-            // Roads-only overlay (Stamen Toner Lines — transparent background)
+            // Roads-only overlay (CartoDB dark lines — transparent background)
             var roads = L.tileLayer(
-                'https://tiles.stadiamaps.com/tiles/stamen_toner_lines/{z}/{x}/{y}{r}.png',
-                {attribution: 'Stadia/Stamen', pane: 'roadsPane', opacity: 0.6}
+                'https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png',
+                {attribution: 'CartoDB', pane: 'roadsPane', opacity: 0.4}
             );
             roads.addTo(map);
 
