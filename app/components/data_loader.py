@@ -79,7 +79,9 @@ def _get_frost_profile():
 
     Uses the elevation covariate (always regenerated with the current bbox)
     as the authoritative grid definition.  Falls back to frost probability
-    TIFs only if the elevation file is missing.
+    TIFs only if the elevation file is missing.  When no TIF is available
+    (e.g. Streamlit Cloud deploy), builds a synthetic profile from the
+    known 100m UTM grid parameters.
     """
     elev_path = COVARIATES_DIR / "elevation.tif"
     if elev_path.exists():
@@ -90,7 +92,15 @@ def _get_frost_profile():
         if path.exists():
             with rasterio.open(path) as src:
                 return dict(src.profile)
-    return None
+    # Synthetic profile for the 100m UTM 17N grid (origin from elevation.tif)
+    from rasterio.transform import Affine
+    return {
+        "crs": "EPSG:32617",
+        "transform": Affine(100.0, 0.0, 301472.366725655,
+                             0.0, -100.0, 3990968.829495334),
+        "height": 1040,
+        "width": 951,
+    }
 
 
 def _adjust_profile_to_grid(profile, grid_h, grid_w):
